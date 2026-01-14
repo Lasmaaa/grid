@@ -1,0 +1,116 @@
+ body{
+  margin: 5rem;;
+ }
+ .flex{
+  display: flex;
+ }
+ .row{
+  flex-direction: row;
+ }
+ .column{
+  flex-direction: column;
+ }
+ table {
+    width: 1500px;
+    height: 1000px;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    background-color: gray;
+    transition: transform 4s;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    width: 33.33%;     
+    height: 333.33px; 
+      
+}
+.container {
+    padding: 20px;
+}
+.div1 {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.div1:hover {
+    background-image: url("https://lh3.googleusercontent.com/drive-storage/AJQWtBO1Ith73jddn_zJzo0wH6F8zMtn6st5l0bnG1HNPRUf0LHNi7sLC-rzmF3mHKIUSkemmlhKUyzpQU8-vY78hzJEHvSuaBFvaK6-NTIpaWY4fQ=w734-h699?auditContext=forDisplay"); 
+}
+
+.div2 {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+#confetti {
+    position: absolute;
+    inset: 0;
+    background: transparent; 
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+.div3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bubble {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffffff 0%, #000000 100%);
+    animation: pulse 6s infinite ease-in-out;
+   
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.links{
+  white-space: break-spaces;
+}
+.youtube-link, .E-klase-link, .Gmail-link, .VTDT-link, .A-link {
+    color: blue;      
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 20px;
+    transition: color 0.3s ease 1s;
+    word-break: break-all;
+  }
+.youtube-link:hover, .E-klase-link:hover, .Gmail-link:hover, .VTDT-link:hover, .A-link:hover{
+  color:green;
+}
+.visited {
+  color: red;       
+}
+
+
+#weather-container {
+  font-family: Arial, sans-serif;
+  border: 2px solid #4A90E2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
