@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laika prognoze ar API</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="laiks.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <table id="myTable">
+            <tr>
+                <td><div class="div1"></div></td>
+                <td>
+                    <div class="div2">
+                        <canvas id="confetti"></canvas>
+                    </div>
+                </td>
+                <td><button onclick="rotateTable()">Click for surprise!</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="div3"><div class="bubble"></div></div>
+                </td>
+                <td>
+                    <div class="links">
+                        <span id="youtubeText" class="youtube-link">YouTube</span>
+                        <span id="E-klase-text" class="E-klase-link">E-klase</span>
+                        <span id="Gmail-text" class="Gmail-link">Gmail</span>
+                        <span id="VTDT-text" class="VTDT-link">VTDT</span>
+                        <span id="A-text" class="A-link">1.A</span>
+                    </div>
+                </td>
+                <td>
+                    <div id="weatherBlock">
+                        <div id="location"></div>
+                        <div class="flex column">
+                        <div id="temp"></div>
+                        <div id="conditions"></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="container form-container">
+                        <form action="save.php" method="POST">
+                            <label>First Name:</label>
+                            <input type="text" name="first_name" required>
+                            
+                            <label>Last Name:</label>
+                            <input type="text" name="last_name" required>
+                            
+                            <label>Phone Number:</label>
+                            <input type="text" name="phone" required>
+                            
+                            <label>Personal Code:</label>
+                            <input type="text" name="personal_code" required>
+                            
+                            <button type="submit" class="button">Add User</button>
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    ...
+                </td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
